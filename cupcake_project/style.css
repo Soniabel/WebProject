@@ -1,0 +1,108 @@
+html{
+	background: linear-gradient(295.88deg, #E5BAEC -3.27%, #FFE6FE -3.27%, rgba(222, 249, 255, 0.96) 90.69%);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Cormorant Garamond'
+	color: black;
+	font-size: 24px;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+/*	position: absolute;
+width: 570px;
+height: 121px;
+left: 215px;
+top: 268px;
+}*/
+
+.container {
+	width: 1140px;
+	/*позиционирование по центру*/
+	margin: 0 auto;
+}
+header a {
+  color:#000000;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	margin-top: 46px;
+}
+
+.menu {
+	display: flex;
+	margin-left: 160px;
+}
+
+.menu li {
+	font-size: 23px;
+	margin-right: 25px;
+}
+
+
+.menu li a {
+  text-decoration: none;
+}
+
+.offer {
+	display: flex;
+	align-items: center;
+	margin-top: 111px;
+}
+.offer-content h1{
+	font-weight: bold;
+	font-size: 48px;
+	font-family: Cormorant Garamond;
+}
+.offer-content .text p {
+	font-family: Cormorant Garamond;
+	font-size: 19px;
+	font-weight: 500;
+	margin-top: 14px;
+	line-height: 45px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-align: center;
+}
+.offer-content .buttom {
+	color: #000;
+	font-weight: 600;
+	font-size: 36px;
+	display: block;
+	text-align: center;
+	padding: 17px 0;
+	transition: all 0.5s ease;
+	margin-top: 35px;
+	letter-spacing: 0.03em;
+	background: linear-gradient(108.5deg, #D78192 19.92%, #E0C9BF 93.26%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+.offer-content .buttom:hover {
+	background: #D78192;
+}
+.image{
+	position: absolute;
+width: 570px;
+height: 570px;
+left: 815px;
+top: 193px;
+
+}
+.inst{
+	margin-left:259px;
+}
