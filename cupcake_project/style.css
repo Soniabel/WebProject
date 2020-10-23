@@ -8,15 +8,21 @@ body {
   font-family: 'Cormorant Garamond'
     color: black;
   font-size: 24px;
-  max-height: 2535px;
-  margin: 0 auto;
+
+/*  margin: 0 auto;
   max-width: 1170px;
-  width: 100%;
+  width: 100%;*/
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.container {
+	width: 1170px;
+	/*позиционирование по центру*/
+	margin: 0 auto;
 }
 
 .menu__list .menu__item {
@@ -46,6 +52,8 @@ a {
 .menu__link {
   margin-right: 30px;
 }
+
+
 
 .header__navigate {
   margin-top: 46px;
@@ -99,11 +107,16 @@ a {
 }
 
 .offer__image {
-  position: absolute;
-  width: 570px;
-  height: 570px;
-  left: 815px;
-  top: 193px;
+margin-left: 70px;
+margin-top: 62px;
+}
+
+.offer__image img{
+  max-width: 100%;
+}
+
+.offer_base{
+display: flex;
 }
 
 .assortment {
@@ -130,8 +143,13 @@ a {
   margin-left: 100px;
 }
 
-.cupcakes__image {
+.cupcakes__image img{
   align-items: center;
+  max-width: 100%;
+}
+
+.cheesecake__image img{
+  max-width: 100%;
 }
 
 .button {
@@ -141,9 +159,10 @@ a {
   line-height: 29px;
   margin-top: 39px;
   display: block;
-  width: 166px;
+  max-width: 166px;
   margin-left: 100px;
   font-family: Cormorant Garamond;
+  align-items: center;
 }
 
 .button__text {
@@ -188,6 +207,10 @@ a {
   align-items: center;
 }
 
+.reviews__img img{
+  max-width: 100%;
+}
+
 .button--size-medium {
   width: 226px;
   line-height: 45px;
@@ -210,6 +233,140 @@ a {
   margin-left: 313px;
 }
 
+
 .foooter__text {
   margin-left: 230px;
 }
+
+@media screen and (max-width: 1200px) {
+.container {
+		width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container{
+		width: 960px;
+	}
+  .cheesecake {
+    margin-left: 130px;
+  }
+  .cupcakes {
+    margin-left: 70px;
+  }
+  .footer__contact{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+
+.navigate__logo img{
+  min-width: 100px;
+  height: auto;
+}
+.header__contact{
+  display: flex;
+}
+.foooter__text{
+  flex-wrap: wrap;
+}
+.header__contact {
+  margin-left: 40px;
+}
+.header__contact img{
+  width: 90%;
+  min-width: 21px;
+}
+.footer__contact img{
+  width:90%;
+  min-width: 21px;
+}
+.footer__logo img{
+  min-width: 21px;
+}
+.button {
+margin-left: 50px;
+}
+.footer__logo {
+  margin-left: 213px;
+}
+
+
+.foooter__text {
+  margin-left: 130px;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+  .assortment__base{
+    flex-wrap: wrap;
+  }
+  .offer_base{
+    flex-wrap: wrap;
+  }
+  .navigate__logo img{
+    width:150%;
+  }
+  .offer__image{
+    align-items: center;
+    margin-left: 0px;
+  }
+  .cheesecake {
+    margin-left: 0px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .cupcakes {
+    margin-left: 0px;
+    align-items: center;
+  }
+  .assortment__base{
+    margin-left: 80px;
+  }
+  .button{
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+    padding: 0 15px;
+    }
+    .reviews{
+      flex-wrap: wrap;
+      width: 80%;
+    }
+    .reviews__img img{
+      width:90%;
+      margin-top: 30px;
+    }
+    .offer__image img{
+      width:95%;
+    }
+    .cupcakes{
+      width:80%;
+    }
+    .cheesecake{
+      width:80%;
+    }
+    .button{
+      margin-left: 50px;
+    }
+    .offer_base{
+      width:87%;
+    }
+    .menu__link{
+      font-size: 14px;
+    }
+  
+  }
